@@ -1,24 +1,21 @@
-// out: style.css, compress: false, strictMath: true
 @import "mixins";
+
+@font-face {
+    font-family: 'oldcyr';
+    src: url('../fonts/CyrillicOldBold.eot'),
+    url('../fonts/CyrillicOldBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CyrillicOldBold.woff') format('woff'),
+    url('../fonts/CyrillicOldBold.ttf') format('truetype');
+}
 
 body {
     margin: 0;
     padding: 0;
     font-size: 14;
-    background-image: url(../img/%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0_%D0%B8%D1%82%D0%BE%D0%B3.jpg);
-    background-position: center top;
-    height: 10000px;
-}
-
-header {
-    background-color: rgb(227, 30, 37);
-    opacity: 0.3;
-    .top {
-        background-color: #fff;
-        width: 100%;
-        height: 155px;
-        .flex-block()
-    }
+    //background-image: url(../img/%D0%B7%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0_%D0%B8%D1%82%D0%BE%D0%B3.jpg);
+    //background-image: url(../img/427de15b03.png);
+    //background-position: center top;
+    //height: 10000px;
 }
 
 .wrapper {
@@ -26,3 +23,391 @@ header {
     margin: 0 auto;
     position: relative;
 }
+
+header {
+    background-color: rgb(227, 30, 37);
+    .top {
+        background-color: #fff;
+        width: 100%;
+        height: 155px;
+        .flex-block();
+        .align-items(center);
+        .logo {
+            width: 230px;
+            margin: auto;
+            img {
+                margin: auto;
+                display: block;
+                height: 120px;
+            }
+        }
+        .address {
+            width: 470px;
+            padding-left: 45px;
+            h1 {
+                margin: 0;
+                font-family: "oldcyr";
+                color: rgb(227, 30, 37);
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+            span {
+                font-family: "Roboto Condensed";
+                font-size: 19px;
+                padding-top: 5px;
+                display: block;
+            }
+        }
+        .tel {
+            width: 470px;
+            margin: auto;
+            a {
+                margin: auto;
+                color: #000;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 58px;
+                margin-left: 70px;
+                font-family: Arial;
+            }
+        }
+    }
+    .textevent {
+        margin-top: 20px;
+        span {
+            font-family: "oldcyr";
+            color: #fff;
+            text-transform: uppercase;
+            display: block;
+            font-size: 50px;
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+    .privileges {
+        .flex-block();
+        .justify-content(space-between);
+        margin-top: 45px;
+        padding-bottom: 100px;
+        .privelege {
+            text-align: center;
+            .icon {
+                height: 125px;
+                img {
+                    max-width: 110px;
+                }
+            }
+            span {
+                text-transform: lowercase;
+                color: #FFFFFF;
+                display: block;
+                font-family: Arial;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.block-1 {
+    .wrapper {
+        .flex-block();
+    }
+    background-color: #fff;
+    .text {
+        margin-top: 60px;
+        padding-bottom: 60px;
+        width: 770px;
+        h2 {
+            margin: 0;
+            color: rgb(227, 30, 37);
+            font-family: "Roboto Condensed";
+            font-weight: normal;
+            font-size: 30px;
+        }
+        p {
+            color: RGB(0, 0, 0);
+            font-family: Arial;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    }
+    .image {
+        margin: auto;
+    }
+}
+
+.block-2 {
+    background-color: rgb(249, 236, 228);
+    ul {
+        padding-left: 13px;
+        font-family: Roboto;
+        font-size: 16px;
+        li {
+            margin-bottom: 20px;
+        }
+    }
+    h2 {
+        margin: 0;
+        color: rgb(227, 30, 37);
+        font-size: 35px;
+    }
+    .wrapper {
+        .flex-block();
+        >div {
+            margin-top: 65px;
+            margin-bottom: 75px;
+        }
+    }
+    .russkaya {
+
+        width: 49.999%;
+    }
+    .ohotnichya {
+        width: 49.999%;
+        margin-left: 35px;
+    }
+    .gallery {
+        img {
+            margin-right: 12px;
+        }
+        img:nth-child(1) {
+              margin-bottom: 12px;
+        }
+        img:nth-child(2) {
+            margin-bottom: 12px;
+        }
+    }
+    span {
+        display: block;
+        font-family: Roboto;
+    }
+    span i {
+        font-size: 16px;
+    }
+    .price {
+        color: rgb(227, 30, 37);
+        font-size: 23px;
+        margin-top: 32px;
+    }
+}
+
+.block-3 {
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+footer {
+    background-color: rgb(227, 30, 37);
+    .wrapper {
+        .flex-block();
+        .justify-content(space-between);
+        .align-items(center);
+        height: 160px;
+    }
+    .logo {
+        width: 220px;
+    }
+    .tel {
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: "Roboto Condensed";
+            font-size: 26px;
+        }
+    }
+    .developer {
+        width: 220px;
+        span {
+            display: block;
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 18px;
+        }
+        .startgo {
+            display: inline-block;
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .wrapper {
+        width: 970px;
+    }
+    header {
+        .top {
+            .tel {
+                a {
+                    font-size: 50px;
+                }
+            }
+
+        }
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        width: 750px;
+    }
+    header {
+        .top {
+            .tel {
+                a {
+                    font-size: 36px;
+                }
+            }
+            .logo {
+                img {
+                    height: 100px;
+                }
+            }
+            .address {
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        .textevent {
+            span {
+                font-size: 40px;
+            }
+        }
+        .privelege {
+            .icon {
+                height: 105px !important;
+                img {
+                    max-width: 80px !important;
+                }
+            }
+            span {
+                font-size: 20px !important;
+            }
+        }
+    }
+    .block-1 {
+        .text {
+            h2 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .block-2 {
+        h2 {
+            font-size: 32px;
+        }
+    }
+    footer {
+        .developer {
+            font-size: 16px;
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+        .border-box();
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    header {
+        .wrapper {
+            padding: 0;
+        }
+        .top {
+            .flex-wrap(wrap);
+            height: auto;
+            > div {
+                width: 100% !important;
+            }
+            .address {
+                text-align: center;
+                padding: 0;
+                margin: 20px 0;
+            }
+            .tel {
+                text-align: center;
+                a{
+                    margin: 0;
+                    font-size: 44px;
+                }
+            }
+        }
+        .textevent {
+            span {
+                font-size: 35px;
+            }
+        }
+        .privileges {
+            .flex-wrap(wrap);
+            padding-bottom: 0;
+        }
+        .privelege {
+            width: calc(~"100% * (1/3)");
+            margin-bottom: 50px;
+            .icon {
+                height: 105px !important;
+                img {
+                    max-width: 80px !important;
+                }
+            }
+            span {
+                font-size: 20px !important;
+            }
+        }
+    }
+    .block-1 {
+        .wrapper {
+            .flex-wrap(wrap);
+        }
+    }
+    .block-2 {
+        .wrapper {
+            .flex-wrap(wrap);
+        }
+        .russkaya {
+            width: 100%;
+        }
+        .ohotnichya {
+            width: 100%;
+            margin-top: 0 !important;
+            margin-left: 0 !important;
+        }
+    }
+    footer {
+        height: auto;
+        .wrapper {
+            .flex-wrap(wrap);
+            > div {
+                width: 100%;
+            }
+            text-align: center;
+        }
+        .logo {
+            display: none;
+        }
+        .developer {
+            span {
+                font-size: 15px;
+            }
+            img {
+                position: relative;
+                top: 15px;
+            }
+        }
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
