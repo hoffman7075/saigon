@@ -132,7 +132,17 @@
             </div>
         </div>
         <div class="block-3">
-            <div id="map"></div>
+            <div id="map">
+                <div class="wrapper">
+                    <div class="snippet">
+                        <h3>Наш адрес:</h3>
+                        <span>
+                            г. Челябинск, ул. Олонецкая, 2<br>
+                            (пересечение пр.Победы и Салавата Юлаева)
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="wrapper">
@@ -152,7 +162,7 @@
             </div>
         </footer>
     </body>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript">
         ymaps.ready(init);
         var myMap,
@@ -160,13 +170,13 @@
 
         function init(){
             myMap = new ymaps.Map("map", {
-                center: [55.76, 37.64],
-                zoom: 7
+                center: [55.180454, 61.280832],
+                zoom: 17
             });
 
-            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-                hintContent: 'Москва!',
-                balloonContent: 'Столица России'
+            myPlacemark = new ymaps.Placemark([55.180454, 61.280832], {
+                hintContent: 'Сайгон Бани',
+                balloonContent: 'Олонецкая 2'
             });
 
             myMap.geoObjects.add(myPlacemark);
