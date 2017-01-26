@@ -1,7 +1,13 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <title>Бани Сайгон</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
     </head>
     <body>
         <header>
@@ -13,13 +19,25 @@
                     <div class="address">
                         <h1>Русские бани</h1>
                         <span>г. Челябинск, ул. Олонецкая, 2<br>(пересечение пр.Победы и Салавата Юлаева)</span>
+                        <span>График работы: круглосуточно, без выходных</span>
                     </div>
                     <div class="tel">
                         <a href="tel:83512236566">223 - 65 - 66</a>
                     </div>
                 </div>
-                <div class="textevent">
-                    <span>Внимание!<br>При заказе 4-х часов – 5-ый в подарок!</span>
+                <script>
+                    $(document).ready(function(){
+                        $('.owl-carousel').owlCarousel({
+                            loop:true,
+                            items:1,
+                            autoplay: true
+                        })
+                    });
+                </script>
+                <div class="owl-carousel owl-theme textevent">
+                    <div><span class="big">-50%</span><span>Cкидка на все время парения в честь открытия.<br>Действует до 12.02.2017 года. Акция проходит совместно с порталом gilmon.ru</span></div>
+                    <div><span class="big">-30%</span><span>Cкидка именинникам.<br>Подробности у администратора. Акции и скидки не суммируются.</span></div>
+                    <div><span class="big">5-ый час в подарок!</span><span>При заказе 4-х часов. В любой день недели.</span></div>
                 </div>
                 <div class="privileges">
                     <div class="privelege">
@@ -105,8 +123,34 @@
                         <img src="img/gallery3.jpg" alt="">
                         <img src="img/gallery4.jpg" alt="">
                     </div>
-                    <span class="price">1000 руб. /час</span>
-                    <span><i>(стоимость без учета скидки)</i></span>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"><strong>СТАНДАРТНЫЙ ПРАЙС<br>руб./час</strong></td>
+                            <td colspan="2"><strong>ПО КАРТАМ ГОСТЕЙ SAIGON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>ВРЕМЯ</td>
+                            <td><strong>БУДНИ</strong></td>
+                            <td><strong>ВЫХОДНОЙ ДЕНЬ</strong></td>
+                            <td><strong>БУДНИ</strong></td>
+                            <td><strong>ВЫХОДНОЙ ДЕНЬ</strong></td>
+                        </tr>
+                        <tr>
+                            <td>13:00-<br>18:00</td>
+                            <td>800</td>
+                            <td rowspan="2">1600</td>
+                            <td>300</td>
+                            <td rowspan="2">700</td>
+                        </tr>
+                        <tr>
+                            <td>18:00-<br>01:00</td>
+                            <td>1600</td>
+                            <td>700</td>
+                        </tr>
+                    </table>
+                    <span>Зал рассчитан на 8 человек.  Фиксированная доплата за каждого человека свыше – 200 рублей за все время пребывания.</span>
+                    <span>Дети до 7 лет находятся бесплатно. После 7 лет учитываются как взрослые.</span>
                 </div>
                 <div class="ohotnichya">
                     <h2>
@@ -126,8 +170,34 @@
                         <img src="img/gallery8.jpg" alt="">
                         <img src="img/gallery9.jpg" alt="">
                     </div>
-                    <span class="price">1200 руб. /час</span>
-                    <span><i>(стоимость без учета скидки)</i></span>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"><strong>СТАНДАРТНЫЙ ПРАЙС<br>руб./час</strong></td>
+                            <td colspan="2"><strong>ПО КАРТАМ ГОСТЕЙ SAIGON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>ВРЕМЯ</td>
+                            <td><strong>БУДНИ</strong></td>
+                            <td><strong>ВЫХОДНОЙ ДЕНЬ</strong></td>
+                            <td><strong>БУДНИ</strong></td>
+                            <td><strong>ВЫХОДНОЙ ДЕНЬ</strong></td>
+                        </tr>
+                        <tr>
+                            <td>13:00-<br>18:00</td>
+                            <td>1100</td>
+                            <td rowspan="2">2200</td>
+                            <td>400</td>
+                            <td rowspan="2">1000</td>
+                        </tr>
+                        <tr>
+                            <td>18:00-<br>01:00</td>
+                            <td>2200</td>
+                            <td>1000</td>
+                        </tr>
+                    </table>
+                    <span>Зал рассчитан на 8 человек.  Фиксированная доплата за каждого человека свыше – 200 рублей за все время пребывания.</span>
+                    <span>Дети до 7 лет находятся бесплатно. После 7 лет учитываются как взрослые.</span>
                 </div>
             </div>
         </div>
@@ -139,7 +209,8 @@
                         <span>
                             г. Челябинск, ул. Олонецкая, 2<br>
                             (пересечение пр.Победы и Салавата Юлаева)
-                        </span>
+                        </span><br>
+                        <span>График работы: круглосуточно, без выходных</span>
                     </div>
                 </div>
             </div>
@@ -150,7 +221,7 @@
                     <img src="img/logo-white.png" alt="">
                 </div>
                 <div class="tel">
-                    <a href="83512236566">+7 (351) 223-65-66</a>
+                    <a href="tel:83512236566">+7 (351) 223-65-66</a>
                 </div>
                 <div class="developer">
                     <span>© «Сайгон»</span>
